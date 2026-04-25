@@ -10,7 +10,7 @@ const Header = () => {
             <Image
             alt='Logo'
             width={300}
-            height={200}
+            height='auto'
             src={logo}
             className='mx-auto'
             ></Image>
