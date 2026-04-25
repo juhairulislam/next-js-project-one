@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Header } from "@heroui/react";
 import Navbar from "@/Components/Shared/Navbar";
+import Header from "@/Components/Shared/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,13 +26,11 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
 
-        <Header>
-
-        </Header>
-
+    
+        <Header></Header>
         <Navbar></Navbar>
-        
-        {children}</body>
+        {children}
+        </body>
     </html>
   );
 }
