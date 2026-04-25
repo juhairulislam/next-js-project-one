@@ -34,7 +34,7 @@ export default async function Home() {
 
       {
         categories.news_category.map(category => <li key={category.category_id}
-          className="bg-slate-100 p-2 rounded-md font-bold text-center text-md" 
+          className="bg-slate-100 p-2 rounded-md font-bold text-center text-md cursor-pointer" 
         >
           {category.category_name}
         </li>)
