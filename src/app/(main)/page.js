@@ -1,3 +1,4 @@
+import LeftSideBar from "@/Components/homepage/news/LeftSideBar";
 import Image from "next/image";
 
 
@@ -25,22 +26,7 @@ export default async function Home() {
 
      <div className=" col-span-3">
 
-      <h2 className="text-xl  font-bold">
-
-        All categories 
-        </h2>      
-        
-<ul className="flex flex-col gap-3 mt-6">
-
-      {
-        categories.news_category.map(category => <li key={category.category_id}
-          className="bg-slate-100 p-2 rounded-md font-bold text-center text-md cursor-pointer" 
-        >
-          {category.category_name}
-        </li>)
-      }
-
-</ul>
+ <LeftSideBar categories={categories} activeId={null}></LeftSideBar>
 
 
 

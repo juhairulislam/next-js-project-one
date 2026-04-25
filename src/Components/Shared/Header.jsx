@@ -12,6 +12,7 @@ const Header = () => {
             width={300}
             height='auto'
             src={logo}
+            loading="eager"
             className='mx-auto'
             ></Image>
 
