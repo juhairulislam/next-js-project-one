@@ -9,7 +9,7 @@ const NavLink = ({href, children}) => {
 
     return (
         <div>
-            <Link href={href} className={`${pathName === href? 'text-purple-500' :''}`}>{children}</Link>
+            <Link href={href} className={`${pathName === href? 'border-b-2 border-purple-500' :''}`}>{children}</Link>
         </div>
     );
 };
