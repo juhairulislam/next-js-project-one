@@ -5,7 +5,7 @@ import React from 'react';
 
 const MainLayout = ({children}) => {
     return (
-        <>
+        < >
                <Header></Header>
                <BreakingNews></BreakingNews>
         <Navbar></Navbar>
