@@ -1,4 +1,5 @@
 import LeftSideBar from "@/Components/homepage/news/LeftSideBar";
+import RightSideBar from "@/Components/homepage/news/RightSideBar";
 import Image from "next/image";
 
 
@@ -31,11 +32,13 @@ export default async function Home() {
 
 
      </div>
-     <div className="text-2xl bg-purple-500  font-bold col-span-6">
+     <div className="text-2xl bg-purple-100  font-bold col-span-6">
       All news
      </div>
-     <div className="text-2xl bg-yellow-500  font-bold col-span-3">
-      All social
+     <div className=" col-span-3">
+
+      <RightSideBar></RightSideBar>
+
      </div>
 
      
