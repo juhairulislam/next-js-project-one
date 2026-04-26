@@ -4,9 +4,22 @@ import Link from 'next/link';
 import React from 'react';
 
 
-export const metadata = {
-  title: "Dragon News - Details",
-};
+export const generateMetadata =async ({params}) =>{
+
+    const {id} =await params ;
+
+    const news =await newsDetailsById(id) ;
+
+return {
+
+    title: news.title ,
+    description: news.details
+
+}
+
+
+}
+
 
 const DetailsPage =async ({params}) => {
 
