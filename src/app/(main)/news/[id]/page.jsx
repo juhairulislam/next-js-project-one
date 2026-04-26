@@ -3,6 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+
+export const metadata = {
+  title: "Dragon News - Details",
+};
+
 const DetailsPage =async ({params}) => {
 
     const {id} = await params ;
