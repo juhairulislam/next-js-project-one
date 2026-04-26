@@ -1,6 +1,7 @@
-import LeftSideBar from "@/Components/homepage/news/LeftSideBar";
-import RightSideBar from "@/Components/homepage/news/RightSideBar";
-import Image from "next/image";
+import LeftSideBar from '@/Components/homepage/news/LeftSideBar';
+import RightSideBar from '@/Components/homepage/news/RightSideBar';
+import React from 'react';
+
 
 
 const Categories =async () =>{
@@ -24,24 +25,29 @@ const newsCategoriesById =async (category_id) =>{
 
 }
 
-export default async function Home() {
+const NewsCategoryPage =async ({params}) => {
+
+        const {id} = await params ;
+
 
   const categories =await Categories()
 
   // console.log(categories)
 
-  const news = await newsCategoriesById("01")
+  const news = await newsCategoriesById(id)
 
   // console.log(newsCategories)
 
 
-  return (
-    <div className="grid grid-cols-12 gap-4 w-[85%] mx-auto my-[60px]" >
+
+
+    return (
+        <div className="grid grid-cols-12 gap-4 w-[85%] mx-auto my-[60px]" >
      
 
      <div className=" col-span-3">
 
- <LeftSideBar categories={categories} activeId={null}></LeftSideBar>
+ <LeftSideBar categories={categories} activeId={id}></LeftSideBar>
 
 
 
@@ -74,5 +80,7 @@ export default async function Home() {
 
      
     </div>
-  );
-}
+    );
+};
+
+export default NewsCategoryPage;
