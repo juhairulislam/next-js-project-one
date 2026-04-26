@@ -2,7 +2,7 @@ import React from 'react';
 
 const DetailsPage = () => {
     return (
-        <div>
+        <div className='w-[85%] mx-auto'>
             Details page here
         </div>
     );
