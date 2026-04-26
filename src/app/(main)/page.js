@@ -13,12 +13,26 @@ const Categories =async () =>{
   return data.data ;
 
 }
+const newsCategoriesById =async (category_id) =>{
+
+
+  const res =await fetch(`https://openapi.programming-hero.com/api/news/category/${category_id}`) ;
+
+  const data =await res.json() ;
+
+  return data.data ;
+
+}
 
 export default async function Home() {
 
   const categories =await Categories()
 
   // console.log(categories)
+
+  const newsCategories = await newsCategoriesById("04")
+
+  console.log(newsCategories)
 
 
   return (
