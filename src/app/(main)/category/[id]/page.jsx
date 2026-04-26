@@ -54,10 +54,9 @@ const NewsCategoryPage =async ({params}) => {
      </div>
      <div className=" col-span-6">
 
-      <h1 className="text-xl font-bold">
+      <h1 className="text-xl font-bold mb-6">
 
-        All news
-        
+       News By Category
         </h1>     
 
       <div className="space-y-4">
