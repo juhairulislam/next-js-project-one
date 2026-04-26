@@ -67,7 +67,7 @@ const NewsCategoryPage =async ({params}) => {
         news.map(n => <div key={n._id} className="p-6 rounded-md border">
 
           <h1>{n.title}</h1>
-        </div>) : <h1 className='text-4xl font-bold text-center text-slate-400 mt-[25%]'>No News Found</h1>
+        </div>) : <h1 className='text-4xl font-bold text-center text-purple-200 mt-[25%]'>No News Found</h1>
       }
 
       </div>
