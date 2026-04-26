@@ -1,9 +1,14 @@
 import React from 'react';
 
-const DetailsPage = () => {
+const DetailsPage =async ({params}) => {
+
+    const {id} = await params ;
+
+    console.log(id)
+
     return (
         <div className='w-[85%] mx-auto'>
-            Details page here
+            
         </div>
     );
 };
